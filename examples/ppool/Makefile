@@ -7,10 +7,10 @@ DEBUG = true
 PROJECT_HOME = .
 OBJ_DIR = $(PROJECT_HOME)/_obj
 
-SRCS = $(PROJECT_HOME)/example.cpp
+SRCS = $(PROJECT_HOME)/main.cpp
 
 # Include directories
-INCS = -I$(PROJECT_HOME)/../inc
+INCS = -I$(PROJECT_HOME)/../../inc
 
 # Libraries
 LIBS = -lstdc++fs
