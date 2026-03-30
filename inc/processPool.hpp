@@ -242,7 +242,7 @@ inline bool ProcessPool::ForkChild(int id)
 }
 
 // Spawns N children but keeps no more than M running at once
-bool ProcessPool::Create(int procCount, int maxConcurrentProcs/*=0*/)
+inline bool ProcessPool::Create(int procCount, int maxConcurrentProcs/*=0*/)
 {
     assert(IsParent());
     assert(mActiveChildren.empty());
@@ -534,6 +534,5 @@ public:
         return IsParent();
     }
 };
-
 
 #endif // _PROCESS_POOL_HPP_
