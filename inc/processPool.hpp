@@ -21,7 +21,7 @@ class ProcessPool
 {
 public:
     ProcessPool() = default;
-    ~ProcessPool() { TerminateAll(); }
+    virtual ~ProcessPool() { TerminateAll(); }
 
     // Omit implementation of the copy constructor and assignment operator
     ProcessPool(const ProcessPool&) = delete;
